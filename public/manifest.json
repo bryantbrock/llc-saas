@@ -1,0 +1,10 @@
+{
+  "short_name": "LLC SaaS",
+  "name": "LLC SaaS",
+  "description": "Accounting software for small businesses.",
+  "icons": [],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#F5F5F5"
+}

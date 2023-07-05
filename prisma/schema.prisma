@@ -1,0 +1,20 @@
+// Provider: PlanetSclae
+//   All many-to-many relations must be explicit
+//   https://www.prisma.io/docs/concepts/components/prisma-schema/relations#many-to-many-relations
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider     = "mysql"
+  url          = env("DATABASE_URL")
+  relationMode = "prisma"
+}
+
+model User {
+  id        Int       @id @default(autoincrement())
+  createdAt DateTime  @default(now())
+  deletedAt DateTime?
+  clerkId   String    @unique
+}
